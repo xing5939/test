@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+<package name="student" namespace = "/web" extends = "struts-default">
+		<action name="student_*" method = "{1}" class = "studentAction">
+			<result name="list" type="redirect">/studnetlist.jsp</result>
+		</action>
+</package>
+<package name="course" namespace = "/web" extends = "struts-default">
+		<action name="course_*" method = "{1}" class = "courseAction">
+			<result name="list" type="redirect">/courselist.jsp</result>
+		</action>
+</package>
+</struts>    
